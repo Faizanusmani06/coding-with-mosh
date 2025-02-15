@@ -4,7 +4,7 @@ namespace Testability
 {
     public class OrderProcessor
     {
-        private readonly IShippingCalculator _shippingCalculator;
+        private readonly IShippingCalculator _shippingCalculator; // interface is used to reduce the coupling
 
         public OrderProcessor(IShippingCalculator shippingCalculator)
         {
